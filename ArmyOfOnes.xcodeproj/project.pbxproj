@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A8E4EBC1AF11DE400AEFA5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EBB1AF11DE400AEFA5B /* AppDelegate.swift */; };
+		5A8E4EBF1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EBD1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodeld */; };
+		5A8E4EC41AF11DE400AEFA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E4EC21AF11DE400AEFA5B /* Main.storyboard */; };
+		5A8E4EC61AF11DE400AEFA5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E4EC51AF11DE400AEFA5B /* Images.xcassets */; };
+		5A8E4EC91AF11DE400AEFA5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E4EC71AF11DE400AEFA5B /* LaunchScreen.xib */; };
+		5A8E4ED51AF11DE400AEFA5B /* ArmyOfOnesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4ED41AF11DE400AEFA5B /* ArmyOfOnesTests.swift */; };
+		5A8E4EE51AF1230A00AEFA5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EE21AF1230A00AEFA5B /* ViewController.swift */; };
+		5A8E4EE61AF1230A00AEFA5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EE21AF1230A00AEFA5B /* ViewController.swift */; };
+		5A8E4EEA1AF135AB00AEFA5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EBB1AF11DE400AEFA5B /* AppDelegate.swift */; };
+		5A8E4EEC1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EEB1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift */; };
+		5A8E4EED1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EEB1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift */; };
+		5A8E4EEF1AF152FB00AEFA5B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EEE1AF152FB00AEFA5B /* Currency.swift */; };
+		5A8E4EF01AF152FB00AEFA5B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E4EEE1AF152FB00AEFA5B /* Currency.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A8E4ECF1AF11DE400AEFA5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A8E4EAE1AF11DE400AEFA5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A8E4EB51AF11DE400AEFA5B;
+			remoteInfo = ArmyOfOnes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A8E4EB61AF11DE400AEFA5B /* ArmyOfOnes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmyOfOnes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8E4EBA1AF11DE400AEFA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8E4EBB1AF11DE400AEFA5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A8E4EBE1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArmyOfOnes.xcdatamodel; sourceTree = "<group>"; };
+		5A8E4EC31AF11DE400AEFA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A8E4EC51AF11DE400AEFA5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A8E4EC81AF11DE400AEFA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5A8E4ECE1AF11DE400AEFA5B /* ArmyOfOnesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArmyOfOnesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8E4ED31AF11DE400AEFA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8E4ED41AF11DE400AEFA5B /* ArmyOfOnesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmyOfOnesTests.swift; sourceTree = "<group>"; };
+		5A8E4EE21AF1230A00AEFA5B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A8E4EEB1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		5A8E4EEE1AF152FB00AEFA5B /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A8E4EB31AF11DE400AEFA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A8E4ECB1AF11DE400AEFA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A8E4EAD1AF11DE400AEFA5B = {
+			isa = PBXGroup;
+			children = (
+				5A8E4EB81AF11DE400AEFA5B /* ArmyOfOnes */,
+				5A8E4ED11AF11DE400AEFA5B /* ArmyOfOnesTests */,
+				5A8E4EB71AF11DE400AEFA5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A8E4EB71AF11DE400AEFA5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4EB61AF11DE400AEFA5B /* ArmyOfOnes.app */,
+				5A8E4ECE1AF11DE400AEFA5B /* ArmyOfOnesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A8E4EB81AF11DE400AEFA5B /* ArmyOfOnes */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4EE31AF1230A00AEFA5B /* Models */,
+				5A8E4EE41AF1230A00AEFA5B /* Views */,
+				5A8E4EE11AF1230A00AEFA5B /* Controllers */,
+				5A8E4EBB1AF11DE400AEFA5B /* AppDelegate.swift */,
+				5A8E4EC71AF11DE400AEFA5B /* LaunchScreen.xib */,
+				5A8E4EC21AF11DE400AEFA5B /* Main.storyboard */,
+				5A8E4EC51AF11DE400AEFA5B /* Images.xcassets */,
+				5A8E4EBD1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodeld */,
+				5A8E4EB91AF11DE400AEFA5B /* Supporting Files */,
+			);
+			path = ArmyOfOnes;
+			sourceTree = "<group>";
+		};
+		5A8E4EB91AF11DE400AEFA5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4EBA1AF11DE400AEFA5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A8E4ED11AF11DE400AEFA5B /* ArmyOfOnesTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4ED41AF11DE400AEFA5B /* ArmyOfOnesTests.swift */,
+				5A8E4ED21AF11DE400AEFA5B /* Supporting Files */,
+			);
+			path = ArmyOfOnesTests;
+			sourceTree = "<group>";
+		};
+		5A8E4ED21AF11DE400AEFA5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4ED31AF11DE400AEFA5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A8E4EE11AF1230A00AEFA5B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4EE21AF1230A00AEFA5B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A8E4EE31AF1230A00AEFA5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4EEE1AF152FB00AEFA5B /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A8E4EE41AF1230A00AEFA5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E4EEB1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A8E4EB51AF11DE400AEFA5B /* ArmyOfOnes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A8E4ED81AF11DE400AEFA5B /* Build configuration list for PBXNativeTarget "ArmyOfOnes" */;
+			buildPhases = (
+				5A8E4EB21AF11DE400AEFA5B /* Sources */,
+				5A8E4EB31AF11DE400AEFA5B /* Frameworks */,
+				5A8E4EB41AF11DE400AEFA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArmyOfOnes;
+			productName = ArmyOfOnes;
+			productReference = 5A8E4EB61AF11DE400AEFA5B /* ArmyOfOnes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A8E4ECD1AF11DE400AEFA5B /* ArmyOfOnesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A8E4EDB1AF11DE400AEFA5B /* Build configuration list for PBXNativeTarget "ArmyOfOnesTests" */;
+			buildPhases = (
+				5A8E4ECA1AF11DE400AEFA5B /* Sources */,
+				5A8E4ECB1AF11DE400AEFA5B /* Frameworks */,
+				5A8E4ECC1AF11DE400AEFA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A8E4ED01AF11DE400AEFA5B /* PBXTargetDependency */,
+			);
+			name = ArmyOfOnesTests;
+			productName = ArmyOfOnesTests;
+			productReference = 5A8E4ECE1AF11DE400AEFA5B /* ArmyOfOnesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A8E4EAE1AF11DE400AEFA5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Bryan Bolivar Martinez";
+				TargetAttributes = {
+					5A8E4EB51AF11DE400AEFA5B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					5A8E4ECD1AF11DE400AEFA5B = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 5A8E4EB51AF11DE400AEFA5B;
+					};
+				};
+			};
+			buildConfigurationList = 5A8E4EB11AF11DE400AEFA5B /* Build configuration list for PBXProject "ArmyOfOnes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A8E4EAD1AF11DE400AEFA5B;
+			productRefGroup = 5A8E4EB71AF11DE400AEFA5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A8E4EB51AF11DE400AEFA5B /* ArmyOfOnes */,
+				5A8E4ECD1AF11DE400AEFA5B /* ArmyOfOnesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A8E4EB41AF11DE400AEFA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8E4EC41AF11DE400AEFA5B /* Main.storyboard in Resources */,
+				5A8E4EC91AF11DE400AEFA5B /* LaunchScreen.xib in Resources */,
+				5A8E4EC61AF11DE400AEFA5B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A8E4ECC1AF11DE400AEFA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A8E4EB21AF11DE400AEFA5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8E4EEF1AF152FB00AEFA5B /* Currency.swift in Sources */,
+				5A8E4EE51AF1230A00AEFA5B /* ViewController.swift in Sources */,
+				5A8E4EBF1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodeld in Sources */,
+				5A8E4EEC1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift in Sources */,
+				5A8E4EBC1AF11DE400AEFA5B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A8E4ECA1AF11DE400AEFA5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8E4EF01AF152FB00AEFA5B /* Currency.swift in Sources */,
+				5A8E4EEA1AF135AB00AEFA5B /* AppDelegate.swift in Sources */,
+				5A8E4EE61AF1230A00AEFA5B /* ViewController.swift in Sources */,
+				5A8E4EED1AF14B2D00AEFA5B /* CurrencyTableViewCell.swift in Sources */,
+				5A8E4ED51AF11DE400AEFA5B /* ArmyOfOnesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A8E4ED01AF11DE400AEFA5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A8E4EB51AF11DE400AEFA5B /* ArmyOfOnes */;
+			targetProxy = 5A8E4ECF1AF11DE400AEFA5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A8E4EC21AF11DE400AEFA5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A8E4EC31AF11DE400AEFA5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A8E4EC71AF11DE400AEFA5B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A8E4EC81AF11DE400AEFA5B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A8E4ED61AF11DE400AEFA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A8E4ED71AF11DE400AEFA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A8E4ED91AF11DE400AEFA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArmyOfOnes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A8E4EDA1AF11DE400AEFA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArmyOfOnes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5A8E4EDC1AF11DE400AEFA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArmyOfOnesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArmyOfOnes.app/ArmyOfOnes";
+			};
+			name = Debug;
+		};
+		5A8E4EDD1AF11DE400AEFA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArmyOfOnesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArmyOfOnes.app/ArmyOfOnes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A8E4EB11AF11DE400AEFA5B /* Build configuration list for PBXProject "ArmyOfOnes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A8E4ED61AF11DE400AEFA5B /* Debug */,
+				5A8E4ED71AF11DE400AEFA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A8E4ED81AF11DE400AEFA5B /* Build configuration list for PBXNativeTarget "ArmyOfOnes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A8E4ED91AF11DE400AEFA5B /* Debug */,
+				5A8E4EDA1AF11DE400AEFA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A8E4EDB1AF11DE400AEFA5B /* Build configuration list for PBXNativeTarget "ArmyOfOnesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A8E4EDC1AF11DE400AEFA5B /* Debug */,
+				5A8E4EDD1AF11DE400AEFA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5A8E4EBD1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5A8E4EBE1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodel */,
+			);
+			currentVersion = 5A8E4EBE1AF11DE400AEFA5B /* ArmyOfOnes.xcdatamodel */;
+			path = ArmyOfOnes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5A8E4EAE1AF11DE400AEFA5B /* Project object */;
+}
