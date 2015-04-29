@@ -8,12 +8,15 @@
 
 import UIKit
 import CoreData
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,NSFetchedResultsControllerDelegate {
+    
+    var managedObjectContext: NSManagedObjectContext?
+
     @IBOutlet weak var tableView: UITableView!
     var currencies: [NSManagedObject] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        //getTodayCurrencies()
+       
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -33,7 +36,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let results = fetchedResults {
             currencies = results
             println(results)
-            self.tableView.reloadData()
+            if currencies.isEmpty {
+                getTodayCurrencies()
+            }else{
+                self.tableView.reloadData()
+            }
+            
         } else {
             println("Could not fetch \(error), \(error!.userInfo)")
         }
@@ -56,19 +64,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let appDelegate =
                 UIApplication.sharedApplication().delegate as! AppDelegate
                 let managedContext = appDelegate.managedObjectContext!
+                var myMO:NSManagedObject
                 for rate in jsonResult.objectForKey("rates") as! NSDictionary {
-                    let entity =  NSEntityDescription.entityForName("Currency",
-                        inManagedObjectContext:
-                        managedContext)
-                    let currency = NSManagedObject(entity: entity!,
-                        insertIntoManagedObjectContext:managedContext)
-                    currency.setValue(rate.key, forKey: "country")
-                    currency.setValue(rate.value, forKey: "value")
-                    var error: NSError?
-                    if !managedContext.save(&error) {
-                        println("Could not save \(error), \(error?.userInfo)")
+                    if (rate.key as! String == "USD") || (rate.key as! String == "EUR") {
+                        myMO = NSEntityDescription.insertNewObjectForEntityForName("Currency", inManagedObjectContext: managedContext) as! NSManagedObject
+                        myMO.setValue(rate.key as! String, forKey: "country")
+                        myMO.setValue(rate.value as! NSNumber, forKey: "value")
                     }
-                    currencies.append(currency)
                 }
                 self.updateListOfCurrencies()
             } else {
@@ -79,7 +81,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! CurrencyTableViewCell
-        
+        var currency: Currency = 
         //cell.textLabel?.text = "sss"
         
         return cell

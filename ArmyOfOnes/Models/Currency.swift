@@ -21,8 +21,8 @@ enum Country: Int {
 }
 class Currency: NSManagedObject {
 
-    @NSManaged var country: String
-    @NSManaged var value: NSNumber
+    @NSManaged var country: String!
+    @NSManaged var value: NSNumber!
     func convertToCurrency(newCountry: Country, andValue: Int) -> Double{
         switch newCountry{
         case .USD:
@@ -48,16 +48,8 @@ class Currency: NSManagedObject {
         if (country.isEmpty == true){
             return false
         }
-        //var currencies = [NSManagedObject]()
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext!
-        //let entity =  NSEntityDescription.entityForName("Currency",
-        //    inManagedObjectContext:
-        //    managedContext)
-        //let currency = NSManagedObject(entity: entity!,
-        //    insertIntoManagedObjectContext:managedContext)
-        //currency.setValue(value, forKey: "value")
-        //currency.setValue(country!, forKey: "country")
         var error: NSError?
         if !managedContext.save(&error) {
             println("Could not save \(error), \(error?.userInfo)")
