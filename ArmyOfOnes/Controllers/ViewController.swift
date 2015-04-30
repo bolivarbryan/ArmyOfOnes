@@ -9,16 +9,12 @@
 import UIKit
 import CoreData
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,NSFetchedResultsControllerDelegate {
-    
     var managedObjectContext: NSManagedObjectContext?
-
     @IBOutlet weak var tableView: UITableView!
     var currencies: [NSManagedObject] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-       
     }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         updateListOfCurrencies()
@@ -38,10 +34,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             println(results)
             if currencies.isEmpty {
                 getTodayCurrencies()
-            }else{
-                self.tableView.reloadData()
             }
-            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.tableView.reloadData()
+            })
         } else {
             println("Could not fetch \(error), \(error!.userInfo)")
         }
@@ -66,11 +62,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let managedContext = appDelegate.managedObjectContext!
                 var myMO:NSManagedObject
                 for rate in jsonResult.objectForKey("rates") as! NSDictionary {
-                    if (rate.key as! String == "USD") || (rate.key as! String == "EUR") {
                         myMO = NSEntityDescription.insertNewObjectForEntityForName("Currency", inManagedObjectContext: managedContext) as! NSManagedObject
                         myMO.setValue(rate.key as! String, forKey: "country")
                         myMO.setValue(rate.value as! NSNumber, forKey: "value")
-                    }
                 }
                 self.updateListOfCurrencies()
             } else {
@@ -79,19 +73,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! CurrencyTableViewCell
-        var currency: Currency = 
-        //cell.textLabel?.text = "sss"
-        
+        var cell:CurrencyTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! CurrencyTableViewCell
+        var currency: NSManagedObject = currencies[indexPath.row]
+        let value: NSNumber = currency.valueForKey("value") as! NSNumber
+        let country: String = currency.valueForKey("country")  as! String
+        cell.currency.text = "\(country): \(value) "
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return currencies.count
     }
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
     }
 }
 
