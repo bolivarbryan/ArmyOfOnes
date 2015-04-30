@@ -11,11 +11,11 @@ import XCTest
 import CoreData
 class ArmyOfOnesTests: XCTestCase {
     var currency: Currency!
+    var viewController: ViewController!
     override func setUp() {
         super.setUp()
         self.currency = Currency()
-        self.currency.value = 1
-        self.currency.country = ""
+        self.viewController = ViewController()
     }
     override func tearDown() {
         super.tearDown()
@@ -29,17 +29,20 @@ class ArmyOfOnesTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    func testThatDollarCurrencyEqualsOne(){
-        XCTAssertTrue(self.currency.convertToCurrency(.USD, andValue:1) == 1, "Convert 1 dollar to dollar should be 1")
-    }
-    
+  
     func testThatCurrencyExtendendsFromNSManagedObject(){
         XCTAssertTrue(self.currency.isKindOfClass(NSManagedObject), "Currency Class should be of type NSManagedObject")
     }
     
-    func testThatSaveCurrencyDoesNotAcceptNilValues(){
-        
-        XCTAssertFalse(currency.save(), "Currency should not accept nil or empty values")
+    func testCurrentDateEqualsTodayDate(){
+        let date = NSDate()
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MMM/dd/yyyy hh:mm"
+        var dateString = dateFormatter.stringFromDate(date)
+        XCTAssertEqual(dateString, viewController.dateToString(), "Dates Should be the same")
     }
     
+    func testThatDollarToDollarConversionEqualsOne(){
+        XCTAssertTrue(viewController.makeConversionFromDollars(1, currency: 1) == 1 , "1 Dollar to dollar conversion should be 1")
+    }
 }
